@@ -12,7 +12,7 @@ We stand at a pivotal moment in software development. The narrative is shifting 
 
 However, a fundamental challenge has emerged. On one hand, we have conversational AIs that are brilliant at reasoning, planning, and structuring logic. On the other, we have tools and models capable of analyzing vast codebases, but they can be less refined. This creates a frustrating gap: developers are caught between intelligent but context-limited AIs and powerful but less interactive tools.
 
-This guide introduces the solution: a new paradigm of collaborative AI development. By intelligently pairing Anthropic's **Claude** with Google's **Gemini**, we can create a workflow that transcends the limitations of any single model. In this workflow, Claude acts as the **Architect** - the strategic mind that initiates tasks, designs solutions, and manages the development dialogue. Gemini acts as the **Analyst**---the deep thinker with a near-infinite memory, capable of scanning and understanding your entire codebase to provide the critical context the Architect needs.
+This guide introduces the solution: a new paradigm of collaborative AI development. By intelligently pairing Anthropic's **Claude Clode** with Google's **Gemini CLI**, we can create a workflow that transcends the limitations of any single model. In this workflow, Claude acts as the **Architect** - the strategic mind that initiates tasks, designs solutions, and manages the development dialogue. Gemini acts as the **Analyst**---the deep thinker with a near-infinite memory, capable of scanning and understanding your entire codebase to provide the critical context the Architect needs.
 
 This guide is your definitive resource for understanding, implementing, and mastering this revolutionary integration. We will explore three core philosophies---from simple manual delegation to fully automated orchestration---and provide practical, real-world playbooks to elevate your coding experience and productivity.
 
@@ -36,7 +36,7 @@ Claude is your user-friendly interface to the entire development process. It set
 
 🧠 **Gemini: The Deep-Thinking Analyst**
 
-Gemini, particularly models like Gemini 1.5 Pro, operates on a different scale. Its defining feature is a massive context window---up to one million tokens---allowing it to ingest and reason over enormous amounts of information at once.
+Gemini, particularly models like Gemini 2.5 Pro, operates on a different scale. Its defining feature is a massive context window---up to one million tokens---allowing it to ingest and reason over enormous amounts of information at once.
 
 -   **Strengths:**
 
@@ -110,7 +110,7 @@ gemini auth
 
 ```
 
-> Note: The Gemini CLI offers a generous free tier (Gemini 1.5 Pro with a 1M token context window) when you log in with a personal Google account.
+> Note: The Gemini CLI offers a generous free tier (Gemini 2.5 Pro with a 1M token context window) when you log in with a personal Google account.
 
 ##### Step 2: The "Secret Sauce" - The Claude System Prompt
 
@@ -335,18 +335,18 @@ The `zen-mcp-server` provides a rich set of tools. You invoke them by asking Cla
 
 | Tool | Purpose | Sample Prompt |
 | --- | --- | --- |
-| **`cha...`** | Your general thinking partner for brainstorming, validation, an... | `Use zen chat to discuss the best database for a social media app.` |
-| **`pla...`** | Breaks down complex projects into manageable, step-by-step plans. | `With zen planner, create a migration plan to move from monolith to microse...` |
-| **`cod...`** | Performs a professional code review, guiding Claude through sys... | `Perform a codereview with gemini pro on the auth module, I suspect securit...` |
-| **`deb...`** | A systematic debugging assistant that enforces methodical root ... | `Use zen debug with o3 to find out why the payment processing is failing si...` |
-| **`ref...`** | Intelligently refactors code with a focus on decomposition and ... | `Use zen refactor with gemini pro to decompose this massive God-class into ...` |
-| **`sec...`** | Performs a comprehensive security audit based on OWASP standard... | `Run a secaudit with o3 on this e-commerce app, focusing on PCI DSS complia...` |
-| **`pre...`** | Validates staged/unstaged git changes before you commit, preven... | `Run a precommit with o3 and confirm my changes don't introduce any regress...` |
-| **`ana...`** | A general-purpose tool for understanding code structure, patter... | `Use zen analyze to understand the data flow in main.py.` |
-| **`tes...`** | Generates comprehensive test suites with a focus on edge cases ... | `Use zen testgen to create pytest tests for the User.login() method.` |
-| **`doc...`** | Generates thorough documentation, including complexity analysis... | `Use zen docgen to document the UserManager class.` |
+| **`chat`** | Your general thinking partner for brainstorming, validation, an... | `Use zen chat to discuss the best database for a social media app.` |
+| **`planner`** | Breaks down complex projects into manageable, step-by-step plans. | `With zen planner, create a migration plan to move from monolith to microse...` |
+| **`codereview`** | Performs a professional code review, guiding Claude through sys... | `Perform a codereview with gemini pro on the auth module, I suspect securit...` |
+| **`debug`** | A systematic debugging assistant that enforces methodical root ... | `Use zen debug with o3 to find out why the payment processing is failing si...` |
+| **`refractor`** | Intelligently refactors code with a focus on decomposition and ... | `Use zen refactor with gemini pro to decompose this massive God-class into ...` |
+| **`secaudit`** | Performs a comprehensive security audit based on OWASP standard... | `Run a secaudit with o3 on this e-commerce app, focusing on PCI DSS complia...` |
+| **`precommit`** | Validates staged/unstaged git changes before you commit, preven... | `Run a precommit with o3 and confirm my changes don't introduce any regress...` |
+| **`analyze`** | A general-purpose tool for understanding code structure, patter... | `Use zen analyze to understand the data flow in main.py.` |
+| **`testgen`** | Generates comprehensive test suites with a focus on edge cases ... | `Use zen testgen to create pytest tests for the User.login() method.` |
+| **`docgen`** | Generates thorough documentation, including complexity analysis... | `Use zen docgen to document the UserManager class.` |
 
-Export to Sheets
+TO view more details, Visit Zen-MCP Official DOCS - https://github.com/BeehiveInnovations/zen-mcp-server 
 
 #### Real-World Example: AI-to-AI Collaboration
 
